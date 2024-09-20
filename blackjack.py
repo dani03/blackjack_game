@@ -72,7 +72,7 @@ if start_game == "y":
                 start_the_game()
 
         if choice == "n" or start_game == "n" and (total_player < 21):
-            while sum_computer < 21 or sum_computer < total_player:
+            while sum_computer < 21 and sum_computer < total_player:
                 computer_card = random_card()
                 computer_new_list = add_new_card(computer_list, computer_card)
                 computer_list = computer_new_list
